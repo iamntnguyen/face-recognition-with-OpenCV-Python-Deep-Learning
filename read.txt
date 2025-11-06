@@ -1,0 +1,5 @@
+py build_dataset.py -o output_images
+py encode_faces.py -i output_images -e encodings.pickle -d hog
+py recognizer_faces_image.py -e encodings.pickle -i test.jpg -d hog
+*test.jpg hãy thêm 1 ảnh vào nằm cùng cấp vs build_dataset có tên la test.jpg 
+
